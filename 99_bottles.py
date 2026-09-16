@@ -10,7 +10,7 @@ async def bottles_of_beer():
         if number_of_bottles > 1: # 99 bottles to 2 bootle
             await verse(
             f"{number_of_bottles} bottles of beer on the wall, {number_of_bottles} bottles of beer.\n"
-            "Take one down, pass it around, " + f"{number_of_bottles  - 1} bottles of beer on the wall.\n"
+            f"Take one down, pass it around, {number_of_bottles  - 1} bottles of beer on the wall.\n"
             )
 
         else: # 1 bottle
