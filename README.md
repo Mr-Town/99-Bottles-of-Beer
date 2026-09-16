@@ -1,5 +1,5 @@
 # 99-Bottles-of-Beer
-## In order to run from terminal type:
+### In order to run from terminal type:
 ```
 python 99_bottles.py
 ```
