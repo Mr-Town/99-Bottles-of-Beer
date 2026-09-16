@@ -2,20 +2,20 @@ import asyncio
 
 async def verse(song):
     print(song)
-    await asyncio.sleep(55555 # I wonder if 5.45sec per verse is enough
+    await asyncio.sleep(5.45) # I wonder if 5.45sec per verse is enough
 
 async def bottles_of_beer():
-    for numberOfBottles in range(99, 0, -1):
+    for number_of_bottles in range(99, 0, -1):
 
-        if numberOfBottles > 1: # 99 bottles to 2 bootle
+        if number_of_bottles > 1: # 99 bottles to 2 bootle
             await verse(
-            f"{numberOfBottles} bottles of beer on the wall, {numberOfBottles} bottles of beer.\n"
-            "Take one down, pass it around, " + f"{numberOfBottles  - 1} bottles of beer on the wall.\n"
+            f"{number_of_bottles} bottles of beer on the wall, {number_of_bottles} bottles of beer.\n"
+            "Take one down, pass it around, " + f"{number_of_bottles  - 1} bottles of beer on the wall.\n"
             )
 
         else: # 1 bottle
             await verse(
-            f"{numberOfBottles} bottle of beer on the wall, {numberOfBottles} bottle of beer.\n"
+            f"{number_of_bottles} bottle of beer on the wall, {number_of_Bottles} bottle of beer.\n"
             "Take one down, pass it around, no more bottles of beer on the wall.\n"
             )
 
@@ -25,5 +25,3 @@ async def bottles_of_beer():
     ) # Time for an AA meeting
 
 asyncio.run(bottles_of_beer())
-
-
